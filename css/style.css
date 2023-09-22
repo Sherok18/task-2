@@ -20,7 +20,7 @@ header{
 li:not(.li1){
     margin: 60px 0 0 20px;
 }
-a{
+.a1{
 text-decoration: none;
 color: rgb(151, 110, 59);
 font-size: 20px;
@@ -55,11 +55,11 @@ font-size: 20px;
     margin-top: 70PX;
 }
 
-nav a{
+nav .a1{
     position: relative;
     padding: 10px;
 }
-nav a::after{
+nav .a1::after{
 position: absolute;
 content:"";
 border-style:solid ;
@@ -70,12 +70,12 @@ height: 90%;
 width: 0%;
 visibility: hidden;
 }
-nav a:hover::after{
+nav .a1:hover::after{
     width: 95%;
     visibility: visible;
     transition: 1s;
 }
-nav a::before{
+nav .a1::before{
     position: absolute;
     content:"";
     border-style:solid ;
@@ -93,18 +93,22 @@ nav a::before{
     }
     .table{
         position: absolute;
-        width: 500px;
+        width: 520px;
         border: 2px solid rgb(123, 87, 33);
         background-color: #fefefd;
-        padding: 30px;
+        padding: 15px;
         margin-top: 20px;
         transform: scale(0);
         transition:  0.5s ;
         opacity: 0;
         visibility: hidden;
+        border-radius: 5px;
     }
     .table-span{
-        border-bottom: 1px dotted rgb(102, 67, 23);
+        border-bottom: 2px dotted rgb(198, 130, 48);
+        color: rgb(99, 65, 23);
+        font-size: 20px;
+
     }
    .li1:hover .table{
     transform: scale(1);
@@ -113,6 +117,14 @@ nav a::before{
    }
    .table ul{
     display: inline-block;
+    list-style: none;
+    text-align: center;
+   }
+   .A2{
+    text-decoration: none;
+    color: rgb(170, 132, 86);
+    font-size: 20px;
+    margin: 0 5px;
    }
 /* ///////////////////////////////////////////////////////////// */
 .home{
@@ -134,7 +146,7 @@ nav a::before{
     height: 40px;
     background-color: rgb(244, 241, 238);
     margin: 50px 100px;
-    border: 2px solid rgb(123, 87, 33);
+    border: 2px solid rgb(127, 92, 39);
 }
 /* /////////////////////////////////////////////////////////////////////// */
 .category{
@@ -430,19 +442,19 @@ body{
     background-size: cover;
 }
 .front5{
-    background-image: url(../images/pexels-max-rahubovskiy-7393981.jpg);
-    background-size: cover;
-}
-.back5{
     background-image: url(../images/pexels-maria-orlova-4947110.jpg);
     background-size: cover;
 }
+.back5{
+    background-image: url(../images/pexels-max-rahubovskiy-7393981.jpg);
+    background-size: cover;
+}
 .front6{
-    background-image: url(../images/DENZI\ Fashion\ Solid\ Wood\ Sofa\ Stool\ Home\ Porch\ Storage\ Rack\ Change\ Shoe\ Bench\ Shoe\ Rack\ Soft\ and\ Comfortable\ Decorative\ Furniture\ Stool\ -\ Living\ in\ a\ shoebox.jpg);
+    background-image: url(../images/Tribesigns\ Shoe\ Cabinet\,\ Slim\ Hidden\ Shoe\ Rack\ Organizer\ with\ 3\ Flip\ Drawers.jpg);
 background-size: cover;
 }
 .back6{
-    background-image: url(../images/Tribesigns\ Shoe\ Cabinet\,\ Slim\ Hidden\ Shoe\ Rack\ Organizer\ with\ 3\ Flip\ Drawers.jpg);
+    background-image: url(../images/DENZI\ Fashion\ Solid\ Wood\ Sofa\ Stool\ Home\ Porch\ Storage\ Rack\ Change\ Shoe\ Bench\ Shoe\ Rack\ Soft\ and\ Comfortable\ Decorative\ Furniture\ Stool\ -\ Living\ in\ a\ shoebox.jpg);
  background-size: cover;
 }
 .prices-i1{
@@ -464,7 +476,7 @@ background-size: cover;
     color: rgb(244, 244, 230);
 }
 .prices-i2{
-    margin-top: 40%;
+    margin-top:20%;
     width: 30px;
     height:30px;
     color: rgb(247, 242, 233);
@@ -472,7 +484,7 @@ background-size: cover;
     padding: 10px;
 }
 .i10{
-    margin-left: 35%;
+    margin-left: 30%;
 }
 .i11{
     margin:0 10px;
